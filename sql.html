@@ -1,0 +1,77 @@
+financical 表
+
+CREATE TABLE `cwzb` (
+	  `股票名` varchar(30) DEFAULT NULL,
+	  `股票代码` varchar(30) DEFAULT NULL,
+	  `报表日期` date DEFAULT NULL,
+	  `基本每股收益` varchar(30) DEFAULT NULL,
+	  `摊薄每股收益` varchar(30) DEFAULT NULL,
+	  `毛利率` varchar(30) DEFAULT NULL,
+	  `贷款回报率` varchar(30) DEFAULT NULL,
+	  `总资产收益率` varchar(30) DEFAULT NULL,
+	  `净资产收益率` varchar(30) DEFAULT NULL,
+	  `流动比率` varchar(30) DEFAULT NULL,
+	  `速动比率` varchar(30) DEFAULT NULL,
+	  `资本充足率` varchar(30) DEFAULT NULL,
+	  `资产周转率` varchar(30) DEFAULT NULL,
+	  `存贷比` varchar(30) DEFAULT NULL,
+	  `存货周转率` varchar(30) DEFAULT NULL,
+	  `管理费用比率` varchar(30) DEFAULT NULL,
+	  `财务费用比率` varchar(30) DEFAULT NULL,
+	  `销售现金比率` varchar(30) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `lrb` (
+	`股票名` varchar(30) DEFAULT NULL,
+	`股票代码` varchar(30) DEFAULT NULL,
+	`报告日期`  date DEFAULT NULL,
+	`总营收`  varchar(30) DEFAULT NULL,
+	`利息收益`  varchar(30) DEFAULT NULL,
+	`费用收益`  varchar(30) DEFAULT NULL,
+	`交易收益`  varchar(30) DEFAULT NULL,
+	`经营利润`  varchar(30) DEFAULT NULL,
+	`除税前利润`  varchar(30) DEFAULT NULL,
+	`净利润`  varchar(30) DEFAULT NULL,
+	`每股基本盈利`  varchar(30) DEFAULT NULL,
+	`每股派息`  varchar(30) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `fzb` (
+	`股票名` varchar(30) DEFAULT NULL,
+	`股票代码` varchar(30) DEFAULT NULL,
+	`报告日期`  date DEFAULT NULL,
+	`固定资产`  varchar(30) DEFAULT NULL,
+	`流动资产`  varchar(30) DEFAULT NULL,
+	`流动负债`  varchar(30) DEFAULT NULL,
+	`存款`  varchar(30) DEFAULT NULL,
+	`现金及银行存结`  varchar(30) DEFAULT NULL,
+	`其他资产`  varchar(30) DEFAULT NULL,
+	`库存现金及短期资金`  varchar(30) DEFAULT NULL,
+	`客户存款`  varchar(30) DEFAULT NULL,
+	`银行同业存款及贷款`  varchar(30) DEFAULT NULL,
+	`可供出售之证券`  varchar(30) DEFAULT NULL,
+	`金融资产`  varchar(30) DEFAULT NULL,
+	`金融负债`  varchar(30) DEFAULT NULL,
+	`总资产`  varchar(30) DEFAULT NULL,
+	`总负债`  varchar(30) DEFAULT NULL,
+	`股东权益`  varchar(30) DEFAULT NULL
+	
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `llb` (
+    `股票名` varchar(30) DEFAULT NULL,
+	`股票代码` varchar(30) DEFAULT NULL,
+	`报告日期`  date DEFAULT NULL,
+	`经营活动产生的现金流`  varchar(30) DEFAULT NULL,
+	`已收利息`  varchar(30) DEFAULT NULL,
+	`已付利息`  varchar(30) DEFAULT NULL,
+	`已收股息`  varchar(30) DEFAULT NULL,
+	`已派股息`  varchar(30) DEFAULT NULL,
+	`投资活动产生现金流`  varchar(30) DEFAULT NULL,
+	`融资活动产生现金流`  varchar(30) DEFAULT NULL,
+	`期初现金及现金等价物`  varchar(30) DEFAULT NULL,
+	`现金及现金等价物净增加额`  varchar(30) DEFAULT NULL,
+	`期末现金及现金等价物`  varchar(30) DEFAULT NULL,
+	`汇率变动影响`  varchar(30) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
